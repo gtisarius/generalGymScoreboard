@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Tyson's Ultimate Sports Scoreboard!</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="main.js"></script>
+
+        <script src="./components/outs.js"></script>
+        <script src="./components/scores.js"></script>
+        <script src="./components/teams.js"></script>
+        <script src="./components/timer.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="title" class="text">Tyson's Ultimate Scoreboard!</h1>
+        </header>
+
+        <div class="main text">
+            <table class="scoreboard text">
+                <tr>
+                    <td><b id="homeTeam" class="teams text">Home</b></td>
+                    <td><b id="awayTeam" class="teams text">Away</b></td>
+                </tr>
+                <tr>
+                    <th><button class="teamBtns" onclick="changeHomeName()">Change Team Name</button></th>
+                    <th><button class="teamBtns" onclick="changeAwayName()">Change Team Name</button></th>
+                </tr>
+                <tr>
+                    <th><p id="homeScore" class="text score">12</p></th>
+                    <th><p id="awayScore" class="text score">23</p></th>
+                </tr>
+                <tr>
+                    <th><p id="homeOuts" class="text outs">0</p></th>
+                    <th><p id="awayOuts" class="text outs">0</p></th>
+                </tr>
+                <tr>
+                    <th>
+                        <button class="lScoreButtons" onclick="updateScore(true, -3)">-3</button>
+                        <button class="lScoreButtons" onclick="updateScore(true, -2)">-2</button>
+                        <button class="lScoreButtons" onclick="updateScore(true, -1)">-1</button>
+
+                        <button class="wScoreButtons" onclick="updateScore(true, 1)">+1</button>
+                        <button class="wScoreButtons" onclick="updateScore(true, 2)">+2</button>
+                        <button class="wScoreButtons" onclick="updateScore(true, 3)">+3</button>
+                    </th>
+                    <th>
+                        <button class="lScoreButtons" onclick="updateScore(false, -3)">-3</button>
+                        <button class="lScoreButtons" onclick="updateScore(false, -2)">-2</button>
+                        <button class="lScoreButtons" onclick="updateScore(false, -1)">-1</button>
+
+                        <button class="wScoreButtons" onclick="updateScore(false, 1)">+1</button>
+                        <button class="wScoreButtons" onclick="updateScore(false, 2)">+2</button>
+                        <button class="wScoreButtons" onclick="updateScore(false, 3)">+3</button>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <button class="outButtons" onclick="updateOuts(true, 1)">+1 Out</button>
+                        <button class="outButtons" onclick="updateOuts(true, -1)">-1 Out</button>
+                    </th>
+                    <th>
+                        <button class="outButtons" onclick="updateOuts(false, 1)">+1 Out</button>
+                        <button class="outButtons" onclick="updateOuts(false, -1)">-1 Out</button>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

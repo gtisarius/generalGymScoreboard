@@ -1,0 +1,38 @@
+body {
+    background-color: gold;
+}
+
+.main {
+    background-color: maroon;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.scoreboard {
+    /* text-align: center; */
+    width:100%;
+    table-layout: fixed;
+    /* white-space: nowrap; */
+}
+
+#title {
+    color:black
+}
+
+.text {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.teams {
+    font-size: 50px;
+}
+
+.score {
+    font-size: 200px;
+}
+
+.outs {
+    font-size:100px;
+}
+
