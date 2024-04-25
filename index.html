@@ -13,7 +13,10 @@
         <header>
             <h1 id="title" class="text">Tyson's Ultimate Scoreboard!</h1>
         </header>
-
+        
+        <div class="timer text">
+            <p id="time" class="text time">0:00</p>
+        </div>
         <div class="main text">
             <table class="scoreboard text">
                 <tr>
@@ -25,8 +28,8 @@
                     <th><button class="teamBtns" onclick="changeAwayName()">Change Team Name</button></th>
                 </tr>
                 <tr>
-                    <th><p id="homeScore" class="text score">12</p></th>
-                    <th><p id="awayScore" class="text score">23</p></th>
+                    <th><p id="homeScore" class="text score">0</p></th>
+                    <th><p id="awayScore" class="text score">0</p></th>
                 </tr>
                 <tr>
                     <th><p id="homeOuts" class="text outs">0</p></th>
@@ -63,6 +66,9 @@
                     </th>
                 </tr>
             </table>
+            <button class="outButtons" onclick="setTime()">Set time</button>
+            <button class="outButtons" id="startButton" onclick="startOrStopTime()">Start time</button>
+            <button class="outButtons" onclick="clearOuts()">Clear outs</button>
         </div>
     </body>
 </html>
